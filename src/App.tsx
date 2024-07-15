@@ -1,22 +1,22 @@
 import React from 'react'
-import data from '/Users/melissagwyn/sdg/PhotoGallery/src/data.json'
 import { CategoryList } from './components/CategoryList'
-import { PhotoList } from '/Users/melissagwyn/sdg/PhotoGallery/src/components/PhotoList'
-
-export type PhotoDetailType = {
-  title: string
-  imageURL: string
-  sourceURL: string
-}
+import { PhotoList } from './components/PhotoList'
+import { Route, Switch, Link } from 'wouter'
 
 export function App() {
-  const categoryListFromData = Object.values(data)
   return (
     <div className="app">
       <header>
-        <h1> Melissa&apos;s Gallery of Interest </h1>
+        <h1>
+          <Link to="/">Melissa&apos;s Gallery of Interest </Link>
+        </h1>
       </header>
-      <main>{categoryListFromData}</main>
+      <main>
+        <Switch>
+          <Route path="/" component={CategoryList} />
+          <Route path="/:slug" component={PhotoList} />
+        </Switch>
+      </main>
     </div>
   )
 }

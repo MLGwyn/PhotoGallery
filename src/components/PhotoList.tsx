@@ -1,18 +1,32 @@
 import React from 'react'
-import data from '/Users/melissagwyn/sdg/PhotoGallery/src/data.json'
+import rawData from '../data.json'
+import { Link, useParams } from 'wouter'
+import { CategoryListType } from '../types'
+
+const data: CategoryListType = rawData
 
 export function PhotoList() {
+  const params = useParams()
+  const cat = params.slug && data[params.slug]
+  if (!cat) {
+    return <h2>Womp Womp</h2>
+  }
   return (
-    <ul>
-      {data.pandas.photos.map(function (photoDetail) {
-        return (
-          <React.Fragment key={photoDetail.title}>
-            <p>{photoDetail.title}</p>
-            <img src={photoDetail.imageURL} />{' '}
-            <a href={photoDetail.sourceURL}>Source</a>
-          </React.Fragment>
-        )
-      })}
-    </ul>
+    <>
+      <h2>{cat.title}</h2>
+      <span>{cat.description}</span>
+      <ul>
+        {cat.photos.map(function (photoDetail, index) {
+          return (
+            <React.Fragment key={photoDetail.title}>
+              <Link to={`${params.slug}/${index}`}>
+                {photoDetail.title}
+                <img src={photoDetail.imageURL} />
+              </Link>
+            </React.Fragment>
+          )
+        })}
+      </ul>
+    </>
   )
 }

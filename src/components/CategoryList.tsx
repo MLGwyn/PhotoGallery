@@ -1,49 +1,30 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import rawData from '../data.json'
+import React from 'react'
+import { Link } from 'wouter'
+import { CategoryListType, CategoryPropsType } from '../types'
 
-type CategoryType = {
-  title: string | undefined
-  description: string
-  photos: [
-    {
-      title: string
-      imageURL: string
-      sourceURL: string
-    }
-  ]
+const data: CategoryListType = rawData
+
+function Category(props: CategoryPropsType) {
+  return (
+    <article className="interests">
+      <h2 className="interest-title">
+        <Link to={`/${props.slug}`}> {props.category.title} </Link>
+      </h2>
+      <p>{props.category.description}</p>
+      <img src={props.category.photos[0].imageURL} />
+    </article>
+  )
 }
 
-type CategoryProps = {
-  category: CategoryType
-}
-
-export function CategoryList(props: CategoryProps) {
-  const [categories, setCategories] = useState<CategoryType[]>([])
-  async function loadCategories() {
-    const response = await axios.get(
-      '/Users/melissagwyn/sdg/PhotoGallery/src/data.json'
-    )
-    setCategories(response.data)
-  }
-  loadCategories()
+export function CategoryList() {
+  const slugs = Object.keys(data)
   return (
     <React.Fragment>
       <div>
-        <article className="interests">
-          <h2 className="interest-title">{props.category.title}</h2>
-          <p>{props.category.description}</p>
-          <ul>
-            {props.category.photos.map(function (photoDetail) {
-              return (
-                <React.Fragment key={photoDetail.title}>
-                  <h3>{photoDetail.title}</h3>
-                  <img src={photoDetail.imageURL} />{' '}
-                  <a href={photoDetail.sourceURL}>Source</a>
-                </React.Fragment>
-              )
-            })}
-          </ul>
-        </article>
+        {slugs.map((cat) => (
+          <Category key={cat} category={data[cat]} slug={cat} />
+        ))}
       </div>
     </React.Fragment>
   )
