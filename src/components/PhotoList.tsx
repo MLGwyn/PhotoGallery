@@ -1,5 +1,5 @@
 import React from 'react'
-import rawData from '../data.json'
+import rawData from '../data2.json'
 import { Link, useParams } from 'wouter'
 import { CategoryListType } from '../types'
 

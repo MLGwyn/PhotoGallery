@@ -1,0 +1,80 @@
+{
+  "baking-cooking": {
+    "title": "Baking & Cooking",
+    "description": "I enjoy spending a lot of time in the kitchen. Whether savory or sweet, baking or cooking, you'll always find me creating something delicious!",
+    "photos": [
+      {
+        "title": "Vietnamese Coffee Sponge Roll",
+        "imageURL": "https://kickassbaker.com/wp-content/uploads/2019/11/swiss-roll-recipe-2.jpg",
+        "sourceURL": "https://kickassbaker.com/vietnamese-coffee-swiss-roll-cake/"
+      },
+      {
+        "title": "Birch Bark Cake for babyshower",
+        "imageURL": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/449924176_10232087394867006_2895185730149630388_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=f426B2scCrsQ7kNvgEYNqA_&_nc_ht=scontent-mia3-1.xx&oh=00_AYA2mZqcDDvjlyRu3P4utb0gu32QwuXib0APa83N3ngzng&oe=66A6F3C8",
+        "sourceURL": "https://cakesbymk.com/recipe/soft-vanilla-cake/#recipe"
+      },
+      {
+        "title": "Spicy Beef Bulgolgi",
+        "imageURL": "https://iamhomesteader.com/wp-content/uploads/2020/07/bulgogi.jpg",
+        "sourceURL": "https://www.allrecipes.com/recipe/246592/spicy-beef-bulgogi/"
+      },
+      {
+        "title": "Thai Red Curry",
+        "imageURL": "https://thewoksoflife.com/wp-content/uploads/2023/04/thai-red-curry-chicken-17.jpg",
+        "sourceURL": "https://thewoksoflife.com/red-curry-chicken/"
+      }
+    ]
+  },
+  "escape-rooms": {
+    "title": "Escape Rooms",
+    "description": "The first escape room was opened in Japan in 2007. Although gaining popularity in the US since 2010, my first escape happened post-covid. They have quickly evolved into one of my favorite pastimes.",
+    "photos": [
+      {
+        "title": "Cinema 7",
+        "imageURL": "https://willtoescape.com/wp-content/uploads/2024/05/now_playing_need-Compress-600x658.png",
+        "sourceURL": "https://willtoescape.com/services/cinema-7/"
+      },
+      {
+        "title": "Puppet Heist",
+        "imageURL": "https://cdn.prod.website-files.com/63521446a2a61a08ae78d2fd/6559231e72be6f414ebab863_escape-room-all-ages-best-orlando.jpg",
+        "sourceURL": "https://www.thebureauorlando.com/missions/the-puppet-heist"
+      },
+      {
+        "title": "Murder on the Orient Express",
+        "imageURL": "https://djvdexlk3h3gw.cloudfront.net/uploads/motoe-30a566-backstory.png",
+        "sourceURL": "https://www.escapology.com/en/orlando-i-drive-fl/escape-games/murder-on-the-orient-express"
+      },
+      {
+        "title": "A Christman Story Escape",
+        "imageURL": "https://willtoescape.com/wp-content/uploads/2017/11/1170-Themescape_ChristmasStory_Florida_OpenNow_2000x2000.png",
+        "sourceURL": "https://willtoescape.com/services/a-christmas-story/"
+      }
+    ]
+  },
+  "giraffes": {
+    "title": "Giraffes",
+    "description": "Giraffes are native to Africa. Being the tallest living terrestrial animal and the largest ruminant on Earth, its no wonder they are my favorite animal.",
+    "photos": [
+      {
+        "title": "Masai Giraffe",
+        "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/440px-Giraffe_Mikumi_National_Park.jpg",
+        "sourceURL": "https://en.wikipedia.org/wiki/Giraffe"
+      },
+      {
+        "title": "Giraffe at the Zoo",
+        "imageURL": "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_giraffe_1_0.jpg",
+        "sourceURL": "https://animals.sandiegozoo.org/animals/giraffe"
+      },
+      {
+        "title": "Giraffe Boop!",
+        "imageURL": "https://dswtwebsite.s3.eu-west-1.amazonaws.com/variants/42q056jc2pcmyw1h97ku8yorv04e/80acf02bd8b65ff79260c2c47f15b9875c3cd16d2d9cdab09f6dab95a6ae67df?response-content-disposition=inline%3B%20filename%3D%22Mt-Kenya-Oct-2020.jpg%22%3B%20filename%2A%3DUTF-8%27%27Mt-Kenya-Oct-2020.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWWXMYJ2TELOEMGA%2F20240724%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240724T160209Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b3c56c15cb25c30c540d6cab7c76694e467a45107c2497c74b7304265c2f46e8",
+        "sourceURL": "https://www.sheldrickwildlifetrust.org/about/species-we-protect-giraffe"
+      },
+      {
+        "title": "Giraffes at a watering hole",
+        "imageURL": "https://www.brendatharp.com/wp-content/uploads/2018/01/Tharp_20170917-5024.jpg",
+        "sourceURL": "https://www.brendatharp.com/2018/01/journey-giraffes-namibia/"
+      }
+    ]
+  }
+}

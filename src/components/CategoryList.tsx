@@ -1,4 +1,4 @@
-import rawData from '../data.json'
+import rawData from '../data2.json'
 import React from 'react'
 import { Link } from 'wouter'
 import { CategoryListType, CategoryPropsType } from '../types'
